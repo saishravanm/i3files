@@ -8,6 +8,7 @@
 # i3 config file (v4)
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
+#picom bullshittery
 
 set $mod Mod1
 
@@ -203,5 +204,6 @@ bar {
   }
 }
 
-
+exec --no-startupd-id picom -b
 exec --no-startup-id nitrogen --restore
+
